@@ -1,23 +1,25 @@
 package com.company;
 
-import javax.sound.midi.Soundbank;
-
 public class Cat extends Animal implements Pet{
 
     private String name;
-    public String Cat(String name){
+    /*public String Cat(String name){
         setName(name);
         return name;
-    }
+    }*/
 
-    public Cat() {
-        leg=4;
-    }
-
-   /*public Cat(String name) {
-        Cat(name);
+    /*public Cat() {
         leg=4;
     }*/
+
+    public Cat(){
+        this( " ");
+    }
+   public Cat(String name) {
+       this.setName(name);
+        //Cat(name);
+        leg=4;
+    }
 
     @Override
     public String getName() {

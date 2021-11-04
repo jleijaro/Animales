@@ -7,9 +7,7 @@ public abstract  class Animal {
         this.leg = leg;
         return leg;
     }
-
     public abstract void eat();
-
     public void walk(){
         System.out.println("numero de patas"+leg);
     }
